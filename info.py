@@ -17,7 +17,7 @@ BOT_TOKEN = environ.get('BOT_TOKEN', "")
 
 
 # This Pictures Is For Start Message Picture, You Can Add Multiple By Giving One Space Between Each.
-PICS = (environ.get('PICS', 'https://envs.sh/s/de-i1QZ8-rHl8x-ckIhvcQ/MFH.mp4')).split()
+PICS = (environ.get('PICS', 'https://telegra.ph/file/31397dffc601793031266-1e2f8c2714dbaf6a9c.jpg')).split()
 
 # Admins & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6233910543').split()] # For Multiple Id Use One Space Between Each.
