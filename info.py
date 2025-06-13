@@ -10,15 +10,14 @@ from Script import script
 id_pattern = re.compile(r'^.\d+$')
 
 # Bot information
-SESSION = environ.get('SESSION', 'TechVJBot')
+SESSION = environ.get('SESSION', '1BVtsOJABu4viqJmSLRAkLo35--Ea0dUV-K1hLsg1U7bq5xzdakKdHBGnSaCLEGczKlht99v7thsmThHdB55YdBn8diEnkQCncE1t1NdBOB1GaHyAnc2dsYNQL3BTKdJq6UAjiwlfShum8zY9NP4UL-loNHEhvkoRhE37kg4Dxvl-vg1qWE2RjSkdG7duC3lulx1eBDhGFXG1cnRaj3t6cCqfoyb9CYKPDHPoWkoIJH95AuJ7tjqTnZZBbKEXsqp-QRGmduknLjd-5lV_FW0S1zGXop4QM2rhp6L6p0DmNUYl3FYtCo-WxiCz-CEDEYv9fFbMrpGjJjL41FXS6fuKod09Jv7g0Bc=')
 API_ID = int(environ.get('API_ID', '20919625'))
 API_HASH = environ.get('API_HASH', '40168846bf06f4ff443f0f7a4182bf8d')
 BOT_TOKEN = environ.get('BOT_TOKEN', "")
 
 
 # This Pictures Is For Start Message Picture, You Can Add Multiple By Giving One Space Between Each.
-PICS = (environ.get('PICS', 'https://graph.org/file/8e130244dbe6b01127271-544b89982764a817f2.jpg https://graph.org/file/0eaee353096c2e61a1220-7ce2857a5f3361224b.jpg https://graph.org/file/b0ab4ec001d10c7f58664-c1815d32d67d942c80.jpg https://graph.org/file/64e96e9811d531214ec29-ad3865ad3118d6f868.jpg https://graph.org/file/c67c762ef903d51f0d615-64cccb470096f83390.jpg https://graph.org/file/9ca3443de0e8679248b92-3f8893c6a6d9a10c16.jpg https://graph.org/file/a958297eab2f782fc2315-04c9b66b3801752690.jpg')).split()
-
+PICS = (environ.get('PICS', 'https://envs.sh/s/de-i1QZ8-rHl8x-ckIhvcQ/MFH.mp4')).split()
 
 # Admins & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6233910543').split()] # For Multiple Id Use One Space Between Each.
@@ -59,16 +58,16 @@ DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in enviro
 
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://wilet57608:brbK0v7rRquUsfpl@cluster0.lwfup.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")   # IF Multiple Database Is False Then Fill Only This Database Url.
+DATABASE_URI = environ.get('DATABASE_URI', "")   # IF Multiple Database Is False Then Fill Only This Database Url.
 DATABASE_NAME = environ.get('DATABASE_NAME', "techvjclonefilterbot")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'vjcollection')
 
 MULTIPLE_DATABASE = bool(environ.get('MULTIPLE_DATABASE', True)) # Set True or False
 
 # If Multiple Database Is True Then Fill All Three Below Database Uri Else You Will Get Error.
-O_DB_URI = environ.get('O_DB_URI', "mongodb+srv://xenam92415:MUI5ki9Lyqsuu26M@cluster0.e840h.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")   # This Db Is For Other Data Store
-F_DB_URI = environ.get('F_DB_URI', "mongodb+srv://lomag83830:Q7OXsaQchn53k4rE@cluster0.o8uqf.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")   # This Db Is For File Data Store
-S_DB_URI = environ.get('S_DB_URI', "mongodb+srv://hafek62826:MfWTTT4xYePxEKug@cluster0.lnddf.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")   # This Db is for File Data Store When First Db Is Going To Be Full.
+O_DB_URI = environ.get('O_DB_URI', "")   # This Db Is For Other Data Store
+F_DB_URI = environ.get('F_DB_URI', "")   # This Db Is For File Data Store
+S_DB_URI = environ.get('S_DB_URI', "")   # This Db is for File Data Store When First Db Is Going To Be Full.
 
 
 # Premium And Referal Settings
@@ -94,8 +93,8 @@ SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'Spportgroup89') # Support Chat Link 
 OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/soumen98890')
 
 # True Or False
-AI_SPELL_CHECK = bool(environ.get('AI_SPELL_CHECK', True))
-PM_SEARCH = bool(environ.get('PM_SEARCH', True))
+AI_SPELL_CHECK = bool(environ.get('AI_SPELL_CHECK', False))
+PM_SEARCH = bool(environ.get('PM_SEARCH', False))
 BUTTON_MODE = bool(environ.get('BUTTON_MODE', True))
 MAX_BTN = bool(environ.get('MAX_BTN', True))
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', False))
